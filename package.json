@@ -1,0 +1,19 @@
+{
+    "name": "social-network-api",
+    "version": "1.0",
+    "description": "Module 18",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server",
+      "dev": "nodemon server",
+      "seed": "node utils/seed"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^6.0.13",
+      "dotenv": "^8.2.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.9"
+    }
+  }
