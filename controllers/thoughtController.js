@@ -19,7 +19,7 @@ module.exports = {
     Thought.findById(ObjectId(req.params.thoughtId))
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: "No thought with that ID" })
+          ? res.status(404).json({ message: "None Thought??" })
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
@@ -53,7 +53,7 @@ module.exports = {
     )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: "No thought with this id!" })
+          ? res.status(404).json({ message: "None Thought!" })
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
@@ -74,7 +74,7 @@ module.exports = {
           }
         );
       } else {
-        res.status(404).json({ message: "No such thought exists" });
+        res.status(404).json({ message: "None Thought!" });
       }
       res.status(200).json({ message: "Thought successfully deleted" });
     } catch (err) {
